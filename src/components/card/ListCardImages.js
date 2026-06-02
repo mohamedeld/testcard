@@ -9,6 +9,7 @@ export const ListCardImages = ({
   tags,
   isRow,
   isContentRow,
+  isBasis,
 }) => {
   return (
     <Box
@@ -20,7 +21,7 @@ export const ListCardImages = ({
         overflow: "hidden",
         position: "relative",
         height: {
-          xs: "350px",
+          xs: "335px",
           sm: "100%",
         },
       }}
@@ -53,42 +54,44 @@ export const ListCardImages = ({
           fill={true}
         />
       </Box>
-      {images?.length > 0 && (
-        <Box
-          sx={{
-            display: "flex",
-            gap: "2px",
-            flex: 3.1,
-          }}
-        >
-          {images?.map((item, index) => (
+      {isBasis
+        ? null
+        : images?.length > 0 && (
             <Box
-              key={`${item}-${index}`}
               sx={{
-                position: "relative",
-                flex: 1,
-                overflow: "hidden",
-
-                borderBottomLeftRadius: {
-                  xs: "0px",
-                  sm: index === 0 ? "16px" : "0px",
-                  md: index === 0 ? "16px" : "0px",
-                },
+                display: "flex",
+                gap: "2px",
+                flex: 3.1,
               }}
             >
-              <Image
-                src={item?.src}
-                alt={item?.alt ?? "sub image"}
-                key={`${item}-${index}`}
-                fill={true}
-                style={{
-                  objectFit: "cover",
-                }}
-              />
+              {images?.map((item, index) => (
+                <Box
+                  key={`${item}-${index}`}
+                  sx={{
+                    position: "relative",
+                    flex: 1,
+                    overflow: "hidden",
+
+                    borderBottomLeftRadius: {
+                      xs: "0px",
+                      sm: index === 0 ? "16px" : "0px",
+                      md: index === 0 ? "16px" : "0px",
+                    },
+                  }}
+                >
+                  <Image
+                    src={item?.src}
+                    alt={item?.alt ?? "sub image"}
+                    key={`${item}-${index}`}
+                    fill={true}
+                    style={{
+                      objectFit: "cover",
+                    }}
+                  />
+                </Box>
+              ))}
             </Box>
-          ))}
-        </Box>
-      )}
+          )}
       <Box
         sx={{
           position: "absolute",

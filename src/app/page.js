@@ -108,7 +108,7 @@ const cardData = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10 h-full p-10">
+    <div className="flex flex-col gap-10 h-full p-8 px-2  md:p-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {cardData?.map((card) => (
           <ListCartItem

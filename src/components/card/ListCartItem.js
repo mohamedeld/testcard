@@ -69,6 +69,7 @@ const ListCartItem = ({
         mainImage={mainImage}
         isRow={isRow}
         images={images}
+        isBasis={!value && !headerIcon}
       />
       {/* map item here */}
       <ListCardContent

@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
+import StarIcon from "@mui/icons-material/Star";
 import { ListCardImages } from "./ListCardImages";
 import { ListCardContent } from "./ListCardContent";
 import { HeaderTag } from "./HeaderTag";
-import StarIcon from "@mui/icons-material/Star";
 import "./style.css";
 const variantColor = {
   purple: {

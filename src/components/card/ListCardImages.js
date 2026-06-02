@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
 import React from "react";
 import Image from "next/image";
+import { Box } from "@mui/material";
 import { TagFooterItem } from "./TagFooterItem";
 
 export const ListCardImages = ({

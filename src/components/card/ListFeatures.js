@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import { ListFeaturesItem } from "./ListFeaturesItem";
 import ParkIcon from "@mui/icons-material/Park";
+import { ListFeaturesItem } from "./ListFeaturesItem";
 export const ListFeatures = ({ isRow, header, featuresList }) => {
   return (
     <Box

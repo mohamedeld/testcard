@@ -1,5 +1,5 @@
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Box } from "@mui/material";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export const HeartIcon = ({ sx = {}, Icon }) => {
   return (

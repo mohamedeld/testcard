@@ -11,7 +11,7 @@ const demoItem = {
   address: "Ar Rihab, Riyadh",
   range: "14 - 33",
   town: 20,
-  villa: 12,
+  villa: "12 villas",
 
   header: "Features",
   featuresList: [
